@@ -2,11 +2,7 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: #cce3de;
-    margin: 0px;
-}
-
+/**最上面**/
 header {
     background-color: #a4c3b2;
     color: #6b9080;
@@ -15,17 +11,12 @@ header {
     padding: 15px;
 }
 
-main {
-    padding: 20px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+body {
+    background-color: #cce3de;
+    margin: 0px;
 }
 
-section {
-    margin-bottom: 20px;
-}
-
+/**目錄超連結**/
 nav {
     background-color: #6b9080;
     font-family: Arial;
@@ -44,44 +35,16 @@ nav a:hover {
     color: white;
 }
 
-.about-img {
-    max-width: 250px;
-    max-height: 250px;
-    margin: -29px 100px;
-    float: left;
-}
-
-.about-img2 {
-    max-width: 500px;
-    max-height: 500px;
-    margin-top: 0px;
-    float: right;
-    margin-right: 200px;
-}
-
-article {
-    flex: 1;
-    padding-right: 10px;
-}
-
-article a {
-    color: #2d6a4f;
-    text-align: right;
-    font-size: large;
-}
-
-aside {
-    flex: 2;
-    padding-left: 10px;
-}
-
-.container {
+main {
+    padding: 20px;
+    width: 100%;
     display: flex;
+    flex-direction: column;
 }
 
-h1 {
-    color: #2d6a4f;
-    font-size: 25px;
+/**關於我**/
+section {
+    margin-bottom: 20px;
 }
 
 .area {
@@ -91,6 +54,19 @@ h1 {
     border-radius: 15px;
 }
 
+.about-img {
+    max-width: 250px;
+    max-height: 250px;
+    margin: -29px 100px;
+    float: left;
+}
+
+.about1 {
+    color: #2d6a4f;
+    font-size: 20px;
+}
+
+/**標語**/
 .area1 {
     background-color: #a4c3b2;
     padding: 20px;
@@ -113,6 +89,28 @@ h1 {
     text-align: center;
 }
 
+/**聯絡方式**/
+.container {
+    display: flex;
+}
+
+h1 {
+    color: #2d6a4f;
+    font-size: 25px;
+}
+
+article {
+    flex: 1;
+    padding-right: 10px;
+}
+
+article a {
+    color: #2d6a4f;
+    text-align: right;
+    font-size: large;
+}
+
+/**專業能力**/
 .progress-label {
     margin-bottom: 10px;
 }
@@ -179,18 +177,22 @@ h1 {
     }
 }
 
-footer {
-    background-color: #a4c3b2;
-    color: #6b9080;
-    text-align: center;
-    padding: 10px;
-    font-size: 20px;
+aside {
+    flex: 2;
+    padding-left: 10px;
 }
 
-.img {
-    max-width: 700px;
-    max-height: 400px;
-    float: left;
+.skill1 {
+    color: #2d6a4f;
+}
+
+/**大學生活**/
+.about-img2 {
+    max-width: 500px;
+    max-height: 500px;
+    margin-top: 0px;
+    float: right;
+    margin-right: 200px;
 }
 
 .school1 {
@@ -205,11 +207,7 @@ footer {
     text-align: justify;
 }
 
-.about1 {
-    color: #2d6a4f;
-    font-size: 20px;
-}
-
+/**課外活動**/
 .slider-container {
     width: 100%;
     height: auto;
@@ -248,6 +246,7 @@ footer {
     font-size: 20px;
 }
 
+/**打工經歷**/
 .school4 {
     text-align: left;
     color: #2d6a4f;
@@ -268,6 +267,11 @@ footer {
     margin-right: 200px;
 }
 
-.skill1 {
-    color: #2d6a4f;
+/**底部**/
+footer {
+    background-color: #a4c3b2;
+    color: #6b9080;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
 }
