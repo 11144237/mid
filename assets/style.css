@@ -111,11 +111,17 @@ article a {
 }
 
 /**專業能力**/
-.progress-label {
+.skill1 {
+    color: #2d6a4f;
+}
+
+/**進度條間距**/
+.skill2 {
     margin-bottom: 10px;
 }
 
-.progress-bar {
+/**進度條框框長寬高背景**/
+.skill3 {
     width: 100%;
     height: 20px;
     background-color: #f0f0f0;
@@ -124,20 +130,16 @@ article a {
     margin-bottom: 10px;
 }
 
-.progress-bar-inner {
+/**跑動的進度條本人**/
+.skill4 {
     width: 0;
     height: 100%;
     background-color: #4caf50;
     animation: progressAnimation 2s ease-in-out forwards;
 }
 
-.progress-bar span {
-    display: inline-block;
-    padding: 4px 8px;
-    color: white;
-}
-
-@keyframes progressAnimation {
+/**@keyframes是動畫的規則 從0變成想好的%數**/
+@keyframes PYTHON {
     from {
         width: 0;
     }
@@ -147,7 +149,7 @@ article a {
     }
 }
 
-@keyframes progressAnimation2 {
+@keyframes JAVA {
     from {
         width: 0;
     }
@@ -157,7 +159,7 @@ article a {
     }
 }
 
-@keyframes progressAnimation3 {
+@keyframes HTML {
     from {
         width: 0;
     }
@@ -167,7 +169,7 @@ article a {
     }
 }
 
-@keyframes progressAnimation4 {
+@keyframes CSS {
     from {
         width: 0;
     }
@@ -182,9 +184,6 @@ aside {
     padding-left: 10px;
 }
 
-.skill1 {
-    color: #2d6a4f;
-}
 
 /**大學生活**/
 .about-img2 {
@@ -208,6 +207,7 @@ aside {
 }
 
 /**課外活動**/
+/**滑輪主體**/
 .slider-container {
     width: 100%;
     height: auto;
@@ -215,17 +215,28 @@ aside {
     position: relative;
 }
 
+/**圖片主體**/
 .slider {
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s;
 }
 
+/**無限循環**/
+.slider.animate {
+    animation: play 6s linear infinite;
+
+}
+
+/**圖片大小**/
 .slider img {
     width: 500px;
     height: auto;
 }
 
-@keyframes slideAnimation {
+/**@keyframes是動畫的規則 play是自己取的無限循環代稱 
+0%是初始狀態100%是最終 transform是將東西水平移動 
+translateX(0)不移動 translateX(-100%)往左移動-100%的距離**/
+@keyframes play {
     0% {
         transform: translateX(0);
     }
@@ -235,10 +246,7 @@ aside {
     }
 }
 
-.slider.animate {
-    animation: slideAnimation 5s linear infinite;
 
-}
 
 .school3 {
     text-align: center;
@@ -259,7 +267,7 @@ aside {
     font-size: 15px;
 }
 
-.image-caption {
+.work {
     clear: right;
     font-size: 12px;
     color: #2d6a4f;
